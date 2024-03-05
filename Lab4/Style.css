@@ -1,8 +1,9 @@
-body {
+
+      body {
       font-family: 'Arial', sans-serif;
       margin: 20px;
       padding: 20px;
-      background-color: white; /* Background color for the entire page */
+      background-color: rgb(154, 142, 142)87)87)* Background color for the entire page */
     }
 
     header {
@@ -60,3 +61,4 @@ body {
       font-size: 14px;
       color: #555;
     }
+    
