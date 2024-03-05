@@ -115,10 +115,19 @@
       Consider adding padding to headings and sections to create a sense of space and improve readability.</li>
       <li>
         <h3 >Html Abuse</h3>
-        The given code strictly adheres to standard practices by using an internal CSS style within the <style> tag in the HTML <head>. This approach is appropriate for small projects or when inline styling is necessary.
+        The given code strictly adheres to standard practices by using an internal CSS style within the style tag in the HTML <head>. This approach is appropriate for small projects or when inline styling is necessary.
       </li>
   </ol>
 </p>
+      <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 </section>
 
 </body>
