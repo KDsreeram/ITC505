@@ -109,6 +109,7 @@
         <h3 >Html Abuse</h3>
         The given code strictly adheres to standard practices by using an internal CSS style within the <style> tag in the HTML <head>. This approach is appropriate for small projects or when inline styling is necessary.
       </li>
+          <li>
               <footer>
         <p>Last updated: 
             <span id="lastModified"></span>
@@ -116,7 +117,9 @@
     </footer>
     <script type="text/javascript">
          var x = document.lastModified;
-         document.getE
+         document.getElementById('lastModified').textContent = x;
+    </script>
+          </li>
   </ol>
 </p>
     <footer>
