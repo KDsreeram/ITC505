@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Addition Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Text Addition Calculator</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar-left">
+      <h3>MENU</h3>
+      <nav>
+          
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">feedback</a></li>
+      </ul>
+    
+      </nav>
+    </aside>
+
+    <main>
+      <div class="calculator">
+        <input type="text" id="input1" placeholder="Enter text">
+        <input type="text" id="input2" placeholder="Enter text">
+        <button onclick="calculate()">Add</button>
+        <input type="text" id="result" placeholder="Result" disabled>
+      </div>
+    </main>
+
+    <aside class="sidebar-right">
+      <div class="advertisement-footer">
+      <h3>Advertisements</h3>
+      <br>
+        <a href="https://www.amazon.com/" target="_blank">
+          <img src="https://m.media-amazon.com/images/I/51lP6UBZiDL._SY500__AC_SY200_.jpg" alt="Advertisement 1">
+        </a>
+    </aside>
+  </div>
+
+  <footer>
+    <dl>
+        <dt><b>1. Finding the Holy Grail Layout</b></dt>
+        <dd><em>Research and implementation of the Holy Grail layout using CSS Grid to ensure a responsive design.</em></dd>
+        <br>
+        <dt><b>2. Dividing the Layout for the Section</b></dt>
+        <dd><em>Strategic division of the page into header, navigation, main content, sidebar, and footer sections.</em></dd>
+        <br>
+        <dt><b>3. Adding the Guessing Game in the Main Content</b></dt>
+        <dd><em>Integration of the Guessing Game into the main section to engage users interactively.</em></dd>
+        <br>
+        <dt><b>4. Where to Add the Required JS Scripts</b></dt>
+        <dd><em>Placement of JavaScript script tags at the end of the body section for optimal loading performance.</em></dd>
+    </dl>
+    <p>Last updated: <span id="lastModified"></span></p>
+
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
