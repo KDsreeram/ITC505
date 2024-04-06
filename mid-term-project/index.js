@@ -62,7 +62,7 @@ let gameData = {
     lostRelic: {
     text: "You recover a legendary relic from the depths. Congratulations!",
     choices: ["Ending 3"],
-    image: "https://static.wikia.nocookie.net/project-deepwoken/images/2/21/Nilsa_and_witherald_are_like_weird_people.png/revision/latest?cb=20230923034036",
+    image: "https://i0.wp.com/giantbrain.co.uk/wp-content/uploads/2019/12/ahc25_art_relic-of-ages.png?fit=700%2C436&ssl=1",
     },
     seaPeople: {
     text: "You meet the mysterious Sea People and learn their secrets. Congratulations!",
