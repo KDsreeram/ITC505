@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <center>
+    <p style="background-color: rgb(205, 39, 39) ;" > Revenge of Lights Out </p>
+</center>
+    
+    <div class="board" id="board"></div>
+
+    <footer>
+        
+        <p style= "font-size: 150%;">Last updated: 
+            <span id="lastModified"></span>
+            
+        </p>
+
+        <p>
+            <h2>Substantive Addendum:</h2> 
+
+
+ <strong>1. Random Starting Configuration Strategy :</strong> 
+   - Creative Choice: Instead of randomly assigning states to individual squares, a strategic decision was made to simulate random clicks on an all-white board. <br>
+   - Implementation:  This approach guarantees a solvable initial configuration while still introducing randomness to each game session. <br>
+   -  Technique : By simulating random clicks, the game starts with a clean slate and then dynamically toggles the squares to create a random but solvable starting point. br 
+
+<br><br>
+   <strong> 2. Toggle Functionality:</strong>
+   - Creative Choice : To efficiently switch the state of squares between white and black, a toggle functionality was implemented. <br> 
+   -  Implementation : This involved adding and removing a CSS class (e.g., "is-off") dynamically to represent the black squares. <br>
+   -  Technique : By toggling the class, the appearance and state of the squares could be altered seamlessly in response to user clicks. <br>
+<br><br>
+  <strong> 3. Win Condition Verification :</strong> 
+   - Creative Choice : Checking for the win condition involved accurately assessing if all squares on the board were turned off (black). <br>
+   - Implementation: This was achieved by collecting all black squares and comparing their count to the total number of squares. <br>
+   -  Technique : If the counts matched, indicating that all squares were turned off, a "You win!" message was triggered using `window.alert()`. <br>
+<br><br>
+ <strong>4.  Styling and User Interface Enhancement :</strong> 
+   -  Creative Choice : Basic styling was applied to the game board to improve the user experience. <br>
+   - Implementation : Each square was represented as a div element with appropriate CSS styling to distinguish between on (white) and off (black) states. <br>
+   - Technique : The game's win message was displayed using a popup window alert, providing immediate feedback to the player upon completing the game. <br>
+<br><br>
+ <strong>Challenges Faced :</strong> 
+- solvability Assurance : Ensuring that the random starting configurations remained solvable posed a significant challenge. The solution of simulating random clicks provided a balanced approach to introducing randomness while maintaining solvability. <br>
+- Toggle Functionality : Implementing smooth and accurate toggling between on and off states for the squares required careful management of CSS classes and event handling. <br>
+- Win Condition Checking Efficiency : Verifying the win condition involved accurately tracking the state of each square and efficiently comparing it against the total number of squares on the board. <br>
+<br>rbr
+
+ <strong>Insights Gained : </strong> 
+-  CSS and JavaScript Interaction : The project reinforced the importance of understanding how CSS and JavaScript interact to create dynamic user interfaces. Manipulating CSS classes emerged as an effective method for altering element appearance and behavior. <br>
+-  Problem-Solving with Randomness : Leveraging randomness in a controlled manner proved to be a powerful tool for generating dynamic content while maintaining predictability and solvability. The strategy of simulating random clicks exemplified this approach, offering a novel solution to the challenge of generating random but solvable game configurations. <br>
+
+In conclusion, the implementation of the "Lights Out" game in JavaScript showcased effective utilization of CSS and JavaScript to deliver an interactive and captivating gaming experience. Randomness added replay value and challenge to each game session, contributing to an engaging user experience. <br>
+        </p>
+    
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    
+
+</body>
+</html>
