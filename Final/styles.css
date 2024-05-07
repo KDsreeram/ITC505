@@ -1,0 +1,25 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(139, 31, 31);
+    border: 1px solid rgb(78, 201, 25);
+}
+
+.square.is-off {
+    background-color: rgb(207, 229, 42);
+}
+
+body
+     {
+        background-image: url("bg6.jpg");
+        background-size: cover;
+        background-position: center;  
+        font-style: italic;
+        color:rgb(236, 236, 19);
+   }
